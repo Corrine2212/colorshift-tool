@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Shift</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Color Shift</h1>
+      <h2 class="subtitle">A tool for lightening or darkening your colors</h2>
+
+      <div class="form-wrapper">
+        <div class="hex-wrapper">
+          <label for="hex">Color (Hex)</label>
+          <input type="text" name="hex" id="hexInput" placeholder="#000000" />
+        </div>
+
+        <div class="toggle-wrapper">
+          <label for="hex">Toggle</label>
+          <div class="toggle">
+            <p id="lightenText" class="toggle-text">Lighten</p>
+            <div id="toggleBtn" class="toggle-btn">
+              <div class="inner-circle"></div>
+            </div>
+            <p id="darkenText" class="toggle-text">Darken</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-wrapper">
+        <label for="slider" id="sliderText">0%</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          name="slider"
+          id="slider"
+          class="slider"
+        />
+      </div>
+
+      <div class="color-boxes-wrapper">
+        <div class="input">
+          <p>Input Color</p>
+          <div id="inputColor" class="box"></div>
+        </div>
+        <div class="altered">
+          <p id="alteredColorText">Altered Color</p>
+          <div id="alteredColor" class="box"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
